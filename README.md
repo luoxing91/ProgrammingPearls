@@ -1,2 +1,4 @@
-ProgrammingPearls
-=================
+PearlExercise
+=============
+
+Programming pearl

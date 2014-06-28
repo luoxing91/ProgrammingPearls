@@ -17,7 +17,8 @@ LFLAGS=  $(SFLAGS) -O3                     # release linker flags
 #LFLAGS= $(SFLAGS) -pg                      # debugging linker flags
 LIBS=-L. -lm                               # used libraries
 
-all:phrase  svm_classify
+all:phrase bitmap_sort heap words vocabulary 
+current:heap
 run:phrase
 	./phrase
 tidy: 
@@ -25,9 +26,7 @@ tidy:
 	rm -f pr_loqo/*.o
 
 clean:	tidy
-	rm -f svm_learn
-	rm -f svm_classify
-	rm -f libsvmlight.so
+	rm bitmap_sort  words vocabulary
 
 help:   info
 
