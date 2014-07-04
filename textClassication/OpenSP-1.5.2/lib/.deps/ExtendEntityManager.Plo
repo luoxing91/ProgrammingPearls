@@ -1,0 +1,299 @@
+ExtendEntityManager.lo: ExtendEntityManager.cxx splib.h ../config.h \
+ ../include/ExtendEntityManager.h ../include/EntityManager.h \
+ ../include/types.h \
+ /usr/lib/gcc/i686-pc-linux-gnu/4.7.3/include-fixed/limits.h \
+ /usr/lib/gcc/i686-pc-linux-gnu/4.7.3/include-fixed/syslimits.h \
+ /usr/include/limits.h /usr/include/features.h /usr/include/stdc-predef.h \
+ /usr/include/sys/cdefs.h /usr/include/bits/wordsize.h \
+ /usr/include/gnu/stubs.h /usr/include/gnu/stubs-32.h \
+ /usr/include/bits/posix1_lim.h /usr/include/bits/local_lim.h \
+ /usr/include/linux/limits.h /usr/include/bits/posix2_lim.h \
+ /usr/include/bits/xopen_lim.h /usr/include/bits/stdio_lim.h \
+ /usr/lib/gcc/i686-pc-linux-gnu/4.7.3/include/stddef.h \
+ ../include/StringC.h ../include/StringOf.h /usr/include/string.h \
+ /usr/include/xlocale.h /usr/include/bits/string3.h ../include/Boolean.h \
+ ../include/StringOf.cxx ../include/Resource.h ../include/EntityCatalog.h \
+ ../include/SubstTable.h ../include/Vector.h ../include/xnew.h \
+ /usr/lib/gcc/i686-pc-linux-gnu/4.7.3/include/g++-v4/new \
+ /usr/lib/gcc/i686-pc-linux-gnu/4.7.3/include/g++-v4/i686-pc-linux-gnu/bits/c++config.h \
+ /usr/lib/gcc/i686-pc-linux-gnu/4.7.3/include/g++-v4/i686-pc-linux-gnu/bits/os_defines.h \
+ /usr/lib/gcc/i686-pc-linux-gnu/4.7.3/include/g++-v4/i686-pc-linux-gnu/bits/cpu_defines.h \
+ /usr/lib/gcc/i686-pc-linux-gnu/4.7.3/include/g++-v4/exception \
+ /usr/lib/gcc/i686-pc-linux-gnu/4.7.3/include/g++-v4/bits/atomic_lockfree_defines.h \
+ ../include/Vector.cxx ../include/Ptr.h ../include/Ptr.cxx \
+ ../include/CharsetInfo.h ../include/UnivCharsetDesc.h \
+ ../include/constant.h ../include/CharMap.h ../include/CharMap.cxx \
+ ../include/RangeMap.h ../include/ISet.h ../include/ISet.cxx \
+ /usr/include/stdlib.h /usr/include/bits/waitflags.h \
+ /usr/include/bits/waitstatus.h /usr/include/endian.h \
+ /usr/include/bits/endian.h /usr/include/bits/byteswap.h \
+ /usr/include/bits/types.h /usr/include/bits/typesizes.h \
+ /usr/include/bits/byteswap-16.h /usr/include/sys/types.h \
+ /usr/include/time.h /usr/include/sys/select.h /usr/include/bits/select.h \
+ /usr/include/bits/sigset.h /usr/include/bits/time.h \
+ /usr/include/bits/select2.h /usr/include/sys/sysmacros.h \
+ /usr/include/bits/pthreadtypes.h /usr/include/alloca.h \
+ /usr/include/bits/stdlib-float.h /usr/include/bits/stdlib.h \
+ ../include/RangeMap.cxx ../include/Location.h ../include/Owner.h \
+ ../include/Owner.cxx ../include/rtti.h ../include/CodingSystemKit.h \
+ ../include/CodingSystem.h ../include/OutputByteStream.h \
+ ../include/Link.h ../include/Message.h ../include/CopyOwner.h \
+ ../include/CopyOwner.cxx ../include/MessageArg.h ../include/MessageArg.h \
+ OffsetOrderedList.h ../include/types.h ../include/Owner.h \
+ ../include/NCVector.h ../include/Boolean.h Mutex.h \
+ /usr/include/pthread.h /usr/include/sched.h /usr/include/bits/sched.h \
+ /usr/include/bits/timex.h /usr/include/bits/setjmp.h ../include/rtti.h \
+ ../include/StorageManager.h ../include/Vector.h ../include/constant.h \
+ EntityManagerMessages.h StorageObjectPosition.h \
+ ../include/CodingSystem.h ../include/CodingSystemKit.h \
+ ../include/InputSource.h ../include/XcharMap.h ../include/XcharMap.cxx \
+ ../include/macros.h \
+ /usr/lib/gcc/i686-pc-linux-gnu/4.7.3/include/g++-v4/cassert \
+ /usr/include/assert.h ../include/EntityCatalog.h ../include/CharMap.h \
+ /usr/include/ctype.h /usr/include/stdio.h /usr/include/libio.h \
+ /usr/include/_G_config.h /usr/include/wchar.h \
+ /usr/lib/gcc/i686-pc-linux-gnu/4.7.3/include/stdarg.h \
+ /usr/include/bits/sys_errlist.h /usr/include/bits/stdio.h \
+ /usr/include/bits/stdio2.h
+
+splib.h:
+
+../config.h:
+
+../include/ExtendEntityManager.h:
+
+../include/EntityManager.h:
+
+../include/types.h:
+
+/usr/lib/gcc/i686-pc-linux-gnu/4.7.3/include-fixed/limits.h:
+
+/usr/lib/gcc/i686-pc-linux-gnu/4.7.3/include-fixed/syslimits.h:
+
+/usr/include/limits.h:
+
+/usr/include/features.h:
+
+/usr/include/stdc-predef.h:
+
+/usr/include/sys/cdefs.h:
+
+/usr/include/bits/wordsize.h:
+
+/usr/include/gnu/stubs.h:
+
+/usr/include/gnu/stubs-32.h:
+
+/usr/include/bits/posix1_lim.h:
+
+/usr/include/bits/local_lim.h:
+
+/usr/include/linux/limits.h:
+
+/usr/include/bits/posix2_lim.h:
+
+/usr/include/bits/xopen_lim.h:
+
+/usr/include/bits/stdio_lim.h:
+
+/usr/lib/gcc/i686-pc-linux-gnu/4.7.3/include/stddef.h:
+
+../include/StringC.h:
+
+../include/StringOf.h:
+
+/usr/include/string.h:
+
+/usr/include/xlocale.h:
+
+/usr/include/bits/string3.h:
+
+../include/Boolean.h:
+
+../include/StringOf.cxx:
+
+../include/Resource.h:
+
+../include/EntityCatalog.h:
+
+../include/SubstTable.h:
+
+../include/Vector.h:
+
+../include/xnew.h:
+
+/usr/lib/gcc/i686-pc-linux-gnu/4.7.3/include/g++-v4/new:
+
+/usr/lib/gcc/i686-pc-linux-gnu/4.7.3/include/g++-v4/i686-pc-linux-gnu/bits/c++config.h:
+
+/usr/lib/gcc/i686-pc-linux-gnu/4.7.3/include/g++-v4/i686-pc-linux-gnu/bits/os_defines.h:
+
+/usr/lib/gcc/i686-pc-linux-gnu/4.7.3/include/g++-v4/i686-pc-linux-gnu/bits/cpu_defines.h:
+
+/usr/lib/gcc/i686-pc-linux-gnu/4.7.3/include/g++-v4/exception:
+
+/usr/lib/gcc/i686-pc-linux-gnu/4.7.3/include/g++-v4/bits/atomic_lockfree_defines.h:
+
+../include/Vector.cxx:
+
+../include/Ptr.h:
+
+../include/Ptr.cxx:
+
+../include/CharsetInfo.h:
+
+../include/UnivCharsetDesc.h:
+
+../include/constant.h:
+
+../include/CharMap.h:
+
+../include/CharMap.cxx:
+
+../include/RangeMap.h:
+
+../include/ISet.h:
+
+../include/ISet.cxx:
+
+/usr/include/stdlib.h:
+
+/usr/include/bits/waitflags.h:
+
+/usr/include/bits/waitstatus.h:
+
+/usr/include/endian.h:
+
+/usr/include/bits/endian.h:
+
+/usr/include/bits/byteswap.h:
+
+/usr/include/bits/types.h:
+
+/usr/include/bits/typesizes.h:
+
+/usr/include/bits/byteswap-16.h:
+
+/usr/include/sys/types.h:
+
+/usr/include/time.h:
+
+/usr/include/sys/select.h:
+
+/usr/include/bits/select.h:
+
+/usr/include/bits/sigset.h:
+
+/usr/include/bits/time.h:
+
+/usr/include/bits/select2.h:
+
+/usr/include/sys/sysmacros.h:
+
+/usr/include/bits/pthreadtypes.h:
+
+/usr/include/alloca.h:
+
+/usr/include/bits/stdlib-float.h:
+
+/usr/include/bits/stdlib.h:
+
+../include/RangeMap.cxx:
+
+../include/Location.h:
+
+../include/Owner.h:
+
+../include/Owner.cxx:
+
+../include/rtti.h:
+
+../include/CodingSystemKit.h:
+
+../include/CodingSystem.h:
+
+../include/OutputByteStream.h:
+
+../include/Link.h:
+
+../include/Message.h:
+
+../include/CopyOwner.h:
+
+../include/CopyOwner.cxx:
+
+../include/MessageArg.h:
+
+../include/MessageArg.h:
+
+OffsetOrderedList.h:
+
+../include/types.h:
+
+../include/Owner.h:
+
+../include/NCVector.h:
+
+../include/Boolean.h:
+
+Mutex.h:
+
+/usr/include/pthread.h:
+
+/usr/include/sched.h:
+
+/usr/include/bits/sched.h:
+
+/usr/include/bits/timex.h:
+
+/usr/include/bits/setjmp.h:
+
+../include/rtti.h:
+
+../include/StorageManager.h:
+
+../include/Vector.h:
+
+../include/constant.h:
+
+EntityManagerMessages.h:
+
+StorageObjectPosition.h:
+
+../include/CodingSystem.h:
+
+../include/CodingSystemKit.h:
+
+../include/InputSource.h:
+
+../include/XcharMap.h:
+
+../include/XcharMap.cxx:
+
+../include/macros.h:
+
+/usr/lib/gcc/i686-pc-linux-gnu/4.7.3/include/g++-v4/cassert:
+
+/usr/include/assert.h:
+
+../include/EntityCatalog.h:
+
+../include/CharMap.h:
+
+/usr/include/ctype.h:
+
+/usr/include/stdio.h:
+
+/usr/include/libio.h:
+
+/usr/include/_G_config.h:
+
+/usr/include/wchar.h:
+
+/usr/lib/gcc/i686-pc-linux-gnu/4.7.3/include/stdarg.h:
+
+/usr/include/bits/sys_errlist.h:
+
+/usr/include/bits/stdio.h:
+
+/usr/include/bits/stdio2.h:

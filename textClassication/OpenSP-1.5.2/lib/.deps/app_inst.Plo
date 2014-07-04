@@ -1,0 +1,5 @@
+app_inst.lo: app_inst.cxx splib.h ../config.h
+
+splib.h:
+
+../config.h:

@@ -1,0 +1,5 @@
+parser_inst.lo: parser_inst.cxx splib.h ../config.h
+
+splib.h:
+
+../config.h:

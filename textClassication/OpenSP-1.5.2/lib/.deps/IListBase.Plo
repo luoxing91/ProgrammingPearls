@@ -1,0 +1,12 @@
+IListBase.lo: IListBase.cxx splib.h ../config.h ../include/IListBase.h \
+ ../include/Link.h ../include/Boolean.h
+
+splib.h:
+
+../config.h:
+
+../include/IListBase.h:
+
+../include/Link.h:
+
+../include/Boolean.h:

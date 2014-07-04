@@ -1,0 +1,7 @@
+TypeId.lo: TypeId.cxx splib.h ../config.h ../include/TypeId.h
+
+splib.h:
+
+../config.h:
+
+../include/TypeId.h:

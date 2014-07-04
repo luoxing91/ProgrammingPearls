@@ -1,0 +1,6 @@
+memcmp.lo: memcmp.c ../config.h \
+ /usr/lib/gcc/i686-pc-linux-gnu/4.7.3/include/stddef.h
+
+../config.h:
+
+/usr/lib/gcc/i686-pc-linux-gnu/4.7.3/include/stddef.h:
