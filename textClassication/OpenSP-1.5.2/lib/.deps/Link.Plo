@@ -1,7 +1,0 @@
-Link.lo: Link.cxx splib.h ../config.h ../include/Link.h
-
-splib.h:
-
-../config.h:
-
-../include/Link.h:

@@ -1,5 +1,0 @@
-splib.lo: splib.cxx splib.h ../config.h
-
-splib.h:
-
-../config.h:

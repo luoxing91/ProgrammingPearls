@@ -1,5 +1,0 @@
-arc_inst.lo: arc_inst.cxx splib.h ../config.h
-
-splib.h:
-
-../config.h:

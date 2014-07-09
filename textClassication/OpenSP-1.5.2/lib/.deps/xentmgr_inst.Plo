@@ -1,5 +1,0 @@
-xentmgr_inst.lo: xentmgr_inst.cxx splib.h ../config.h
-
-splib.h:
-
-../config.h:
