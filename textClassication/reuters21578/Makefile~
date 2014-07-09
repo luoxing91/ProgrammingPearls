@@ -1,2 +1,0 @@
-processing:processing.cpp
-	g++ -o processing -lboost_regex $@
