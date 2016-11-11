@@ -8,16 +8,6 @@
 char input_letters[MAXINPUT];
 char *word[MAXWORDS];
 
-int WordNcmp(const char *p, const char *q, int n) {
-  while (*p == *q) {
-    if (*p == 0 && --n == 0) {
-      return 0;
-    }
-    ++p;
-    ++q;
-  }
-  return *p - *q;
-}
 
 
 int SortCmp(const void *a, const void *b) {

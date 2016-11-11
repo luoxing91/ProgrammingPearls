@@ -6,12 +6,14 @@
 #include<vector>
 #include<algorithm>
 using namespace std;
+
 template<typename T>
 struct CompareVector{
     bool operator()(const vector<T>& x,const vector<T>& y) {
         return false;
     }
 };
+
 ///////////////////////////////////////////////
 vector<string> getText(ifstream& in){
     vector<string> words;

@@ -1,58 +1,24 @@
-#include <iostream>  // NOLINT
-using std::cout;
-using std::endl;
-#include <cstdlib>
-
-void swap(int *array, int m, int n) {
-  int temp;
-  temp = array[m];
-  array[m] = array[n];
-  array[n] = temp;
-}
-
-int randint(int m, int n) {
-  return m + (rand() / (RAND_MAX / (n - m + 1) + 1));
-}
-
-void SelectK(int *array, int l, int u, int k) {
-  if (l >= u) {
-    return;
-  }
-  int t, i, j;
-  swap(array, l, randint(l, u));
-  t = array[l];
-  i = l;
-  j = u + 1;
-  for (;;) {
-    do {
-      ++i;
-    } while (i <= u && array[i] < t);
-    do {
-      --j;
-    } while (array[j] > t);
-    if (i > j) {
-      break;
+void selectTopK(int *array, int size, int topK) {
+    if (size < topK) {
+        return ;
     }
-    swap(array, i, j);
-  }
-  swap(array, l, j);
-  if (j < k) {
-    SelectK(array, j + 1, u, k);
-  }
-  else if (j > k) {
-    SelectK(array, l, j - 1, k);
-  }
+    int key = array[size-1];
+    int greaterNumber = 0;
+    for (size_t i = 0; i < size -1; i++) {
+        if (array[i] > key) {
+            std::swap(array[i], array[greaterNumber]);
+            greaterNumber++;
+        }
+    }
+    std::swap(array[greaterNumber], array[size - 1]);
+    if (greaterNumber + 1 == topK && greaterNumber == topK) {
+        return ;
+    }
+    if (topK < greaterNumber) {
+        selectTopK(array, greaterNumber, topK);
+        return ;
+    }
+    assert(topK > greaterNumber + 1);
+    selectTopK(array+greaterNumber+1, size-(greaterNumber+1), topK - greaterNumber);
 }
 
-int main(int argc, char *argv[]) {
-  const int kMaxN = 50;
-  const int kKth = 13;
-  int x[kMaxN];
-  for (int i = 0; i < kMaxN; ++i) {
-    x[i] = kMaxN - i;
-  }
-  SelectK(x, 0, kMaxN - 1, kKth - 1);
-  cout << x[kKth - 1] << endl;
-  return 0;
-}
-  

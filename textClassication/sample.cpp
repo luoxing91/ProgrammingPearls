@@ -2,8 +2,7 @@
 #include <stdio.h>
 #include <iostream>
 using namespace std;
-ostream &operator<<(ostream &os, SGMLApplication::CharString s)
-{
+ostream &operator<<(ostream &os, SGMLApplication::CharString s){
     for (size_t i = 0; i < s.len; i++)
 	os << char(s.ptr[i]);
     return os;

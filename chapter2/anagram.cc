@@ -1,20 +1,12 @@
 #include <iostream> // NOLINT
-using std::cout;
-using std::endl;
-using std::cin;
 #include <string>
-using std::string;
 #include <vector>
-using std::vector;
 #include <map>
-using std::multimap;
 #include <algorithm>
-using std::sort;
 #include <utility>
-using std::pair;
 
 struct classcomp {
-  bool operator() (const string &lhs, const string &rhs) const {
+    bool operator() (const string &lhs, const string &rhs) const {
     if (lhs.compare(rhs) < 0) {
       return true;
     } else {

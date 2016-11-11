@@ -8,15 +8,17 @@
 char input_letters[MAXINPUT];
 char *word[MAXWORDS];
 
-int WordNcmp(const char *p, const char *q, int n) {
-  while (*p == *q) {
-    if (*p == 0 && --n == 0) {
-      return 0;
+int WordNcmp(const char *p, const char *q, size_t n) {
+    int comLen = 0;
+    bool noEq = false;
+    for(int i = 0; i< n && !noEq; i++) {
+        if (q[i] == q[i]) {
+            comLen++;
+        } else {
+            noEq = true;
+        }
     }
-    ++p;
-    ++q;
-  }
-  return *p - *q;
+    return commLen;
 }
 
 char* SkipNword(char *p, int n) {

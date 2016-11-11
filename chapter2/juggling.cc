@@ -3,18 +3,16 @@ using std::cout;
 using std::endl;
 
 int gcd(int m, int n) {
-  if (m < n) {
-    int temp;
-    temp = m;
-    m = n;
-    n = m;
-  }
-  while (n) {
-    int temp = n;
-    n = m % n;
-    m = temp;
-  }
-  return m;
+    if (m < n) {
+        return gcd(n, m);
+    }
+    assert(m >= n);
+    while (n) {
+        int temp = n;
+        n = m % n;
+        m = temp;
+    }
+    return m;
 }
 
 void rotate(char *array, int n, int k) {
@@ -38,9 +36,3 @@ void rotate(char *array, int n, int k) {
   }
 }
 
-int main(int argc, char *argv[]) {
-  char a[] = "abcdefgh";
-  rotate(a, 8, 3);
-  cout << a << endl;
-  return 0;
-}

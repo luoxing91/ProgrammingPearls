@@ -1,28 +1,22 @@
 #include<iostream>
 #include<vector>
 using namespace std;
-void printVector(const vector<int>& vec){
-  vector<int>::iterator it= vec.begin();
-  while(it!=vec.end()){
-    cout<< *it << ' ';
-    ++it;
-  }
-  cout<< endl;
-}
+
 int gcd(int a, int b){
-  if(b==0)
-    return a;
-  else
-    return gcd(b,a%b);
+    if (a < b) {
+        return gcd(b, a);
+    } else if(b==0) {
+        return a;
+    else
+        return gcd(b,a%b);
 }
-void reverseVec(vector<int>& vec,int i, int n){
-  reverse(vec.begin()+i,vec.begin()+n+1);
-}
+
 void rotate(vector<int>& vec, int i , int n){
-  reverseVec(vec,0,i-1);
-  reverseVec(vec,i,n-1);
-  reverseVec(vec,0,n-1);
+    reverse(vec.begin(), vec.begin() + i);
+    reverse(vec.begin() + i, vec.begin() + n );
+    reverse(vec.begin(), vec.begin() + n);
 }
+
 void leftRotate(vector<int>& vec, int d){
   for(int i=0; i< gcd(d,vec.size());++i){
     int temp = vec[i];

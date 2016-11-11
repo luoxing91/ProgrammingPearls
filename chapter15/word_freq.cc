@@ -1,20 +1,14 @@
 #include <iostream>  // NOLINT
-using std::cout;
-using std::endl;
-using std::cin;
 #include <string>
-using std::string;
 
-typedef struct Node* Nodeptr;
+
 struct Node {
-  Node(string inword, int incount, Nodeptr innext) {
-    word = inword;
-    count = incount;
-    next = innext;
-  }
-  string word;
-  int count;
-  Nodeptr next;
+    Node(string inword, int incount, Node *innext)
+        word(inword), count(incount), next(innext){
+    }
+    string word;
+    int count;
+    Node *next;
 };
 
 #define NHASH 29989
@@ -22,11 +16,11 @@ struct Node {
 Nodeptr bin[NHASH];
 
 unsigned int Hash(const string &str) {
-  unsigned int h = 0;
-  for (string::const_iterator it = str.begin(); it != str.end(); ++it) {
-    h = MULT * h + *it;
-  }
-  return h % NHASH;
+    unsigned int h = 0;
+    for (string::const_iterator it = str.begin(); it != str.end(); ++it) {
+        h = MULT * h + *it;
+    }
+    return h % NHASH;
 }
 
 void InWord(const string &str) {

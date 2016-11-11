@@ -3,17 +3,21 @@
 
 #include "defs.h"
 
-void genshuf(int m, int n, int * vector)
-{
-	int i, j, t;
-	for(i = 0; i < n; i++)
-		vector[i] = i;
-	for(i = 0; i < m; i++) {
-		j = rand() % n;
-		t = vector[i];
-		vector[i] = vector[j];
-		vector[j] = t;
-	}
+
+void generateValue(int* values, size_t size){
+    for (size_t i = 0; i < size; i++) {
+        values[i] = (int)i;
+    }
 }
-	
-	
+void randomShuff(int* values, size_t frontSize, size_t totalSize) {
+    while (true) {
+        if (frontSize == 0) {
+            return ;
+        }
+        std::swap(values[random(totalSize)],  values[0]);
+        values++;
+        totalSize--;
+        frontSize--;
+    }
+}
+

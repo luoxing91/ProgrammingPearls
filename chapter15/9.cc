@@ -1,17 +1,21 @@
 #include <string>
-using std::string;
 #include <vector>
-using std::vector;
 #include <iostream>
-using std::cout;
-using std::endl;
 #include <iterator>
-using std::ostream_iterator;
 #include <algorithm>
-using std::copy;
+using namespace std;
+int ComLen(char *p, char *q) {
+  int i = 0;
+  while (*p && (*p == *q)) {
+    ++i;
+    ++p;
+    ++q;
+  }
+  return i;
+}
 
 vector<string> LongestCommonString(const string &s, const string &t) {
-  vector<vector<int> > array;
+    vector<vector<int> > array;
   int len_s = s.size();
   int len_t = t.size();
   int i, j;

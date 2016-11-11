@@ -1,10 +1,8 @@
 #include <iostream> // NOLINT
-using std::cout;
-using std::endl;
 #include <vector>
-using std::vector;
 #include <algorithm>
-using std::sort;
+
+using namespace std;
 
 struct MatrixElem {
   MatrixElem(int i_data, int i_row, int i_col) {
